@@ -1,0 +1,54 @@
+{
+  "name": "learnbay_v3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postbuild": "node uploadS3.mjs",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^14.2.5",
+    "@next/third-parties": "^14.0.2",
+    "aws-sdk": "^2.1504.0",
+    "aws4": "^1.13.1",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "js-cookie": "^3.0.5",
+    "latest": "^0.2.0",
+    "mime-types": "^2.1.35",
+    "mongodb": "^6.3.0",
+    "net": "^1.0.2",
+    "next": "^14.2.3",
+    "next-cookies": "^2.0.3",
+    "nodemailer": "^6.9.11",
+    "razorpay": "^2.9.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-gtm-module": "^2.0.11",
+    "react-icons": "^4.12.0",
+    "react-modal": "^3.16.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-player": "^2.14.1",
+    "react-responsive": "^10.0.0",
+    "saas": "^1.0.0",
+    "sharp": "^0.32.6",
+    "shortid": "^2.2.16",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^9.4.1",
+    "tls": "^0.0.1",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.2",
+    "next-sitemap": "^4.2.3"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}

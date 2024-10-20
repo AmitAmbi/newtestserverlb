@@ -1,0 +1,472 @@
+.container {
+  border-radius: 81px;
+  background: #212121;
+  width: 1300px;
+  margin: auto;
+  color: #000;
+  padding: 70px 0px 0px 0px;
+}
+
+.container h2 {
+  text-align: center;
+  color: #fff1ea;
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.orangeLine {
+  text-decoration: underline;
+  text-decoration-color: #fe7a36;
+  text-underline-offset: 18px;
+  font-weight: 600;
+}
+
+.innerDivOne,
+.innerDivTwo,
+.innerDivThree,
+.innerDivFour {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+}
+
+.innerDivOne,
+.innerDivThree {
+  grid-template-columns: 50% 30%;
+}
+
+.innerDivFour {
+  grid-template-columns: 30% 46%;
+}
+
+.innerDivTwo{
+  grid-template-columns: 35% 42%;
+}
+
+.innerDivOne {
+  margin-top: 80px;
+}
+
+.SecondFour h3 {
+  color: #fff;
+  font-weight: 600;
+}
+.SecondFour p {
+  color: #fff;
+}
+
+.SecondFour p {
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.innerDivFour {
+  margin-top: 120px;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.innerDivThree {
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.oneFirst {
+  background: url("https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/choose_first_left.webp");
+  background-size: contain;
+  height: fit-content;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.twoSecond {
+  position: relative;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(270deg, rgba(0, 114, 188, 0.15) 0.32%, rgba(0, 114, 188, 0.00) 98.75%);
+    color: white;
+    z-index: 1;
+}
+
+.twoSecond::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px; /* Match the border radius */
+  padding: 3px; /* Adjust the border thickness */
+  background: linear-gradient(to right, #0072BC, #212121); /* Gradient border */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude; /* Makes only the border visible */
+  z-index: -1; /* Ensures the border stays behind the content */
+}
+
+
+.ytBot {
+  padding: 0px 20px;
+  height: 102px;
+  display: grid;
+  align-items: center;
+  border-radius: 23px;
+  border: 1px solid rgba(4, 201, 136, 0);
+  background: rgba(4, 201, 136, 0.1);
+}
+
+
+.threeFirst {
+  background: url("https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/project_choose.webp");
+  background-size: contain;
+  height: fit-content;
+  background-repeat: no-repeat;
+  padding: 40px 0px 25px 30px;
+}
+
+.ytHead {
+  font-size: 32px !important;
+}
+
+.oneFirst h3,
+.twoSecond h3,
+.threeFirst h3 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.twoSecondTop {
+  border-radius: 35px;
+  background: rgba(0, 170, 255, 0.2);
+  font-size: 17px !important;
+  padding: 5px 30px 5px 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.twoSecond h3 {
+  color: #0092d0;
+}
+
+.oneFirst p,
+.twoSecond p {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 400;
+  /* margin-right: 85px; */
+  line-height: 25px;
+  width: fit-content;
+}
+
+.domainText {
+  font-size: 15px !important;
+}
+
+.innerBox {
+  display: grid;
+  margin-top: 30px;
+  gap: 40px;
+  grid-template-columns: 50% 40%;
+}
+
+.iconBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.iconBox p {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.oneFour img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.oneSecond img {
+  height: 100%;
+  width: 100%;
+}
+
+.botDiv {
+  background: url("https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/botBg_new.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 140px;
+  padding: 7px 12px;
+  margin-top: 45px;
+}
+.SecondFour {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  border-radius:30px; /* Match the border radius */
+  background: linear-gradient(270deg, rgba(4, 201, 136, 0.00) 0%, rgba(4, 201, 136, 0.15) 100%);
+  color: white; /* Text color */
+  z-index: 1; /* Ensure the content stays above the gradient border */
+}
+
+.SecondFour::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px; /* Match the border radius */
+  padding: 3px; /* Adjust the border thickness */
+  background: linear-gradient(to right, #212121, #04C988); /* Gradient border */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude; /* Makes only the border visible */
+  z-index: -1; /* Ensures the border stays behind the content */
+}
+
+
+.botDivYellow p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.botDiv p,
+.ytBot p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.botDiv span,
+.ytBot span,
+.botDivYellow span {
+  color: #fe7a36;
+  font-weight: 500;
+}
+
+.twoFirst img {
+  height: auto;
+  width: 100%;
+}
+
+.threeSecond img {
+  height: auto;
+  width: 200px;
+  margin: auto;
+}
+
+.threeSecond {
+  display: grid;
+  gap: 20px;
+}
+
+.contentIconDiv {
+  display: grid;
+  grid-template-columns: 50% 38%;
+  gap: 50px;
+  margin-top: 34px;
+}
+
+.contentIconDiv > div {
+  display: grid;
+  grid-template-columns: 10% 86%;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.pHead {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pBot {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.icon {
+  color: #fe7a36;
+}
+.innerDivFourLast {
+  display: grid;
+  grid-template-columns: 42% 30%;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: auto;
+  }
+  .oneSecond img {
+    width: 340px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .container {
+    border-radius: 0;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 1px;
+  }
+  .container h2,
+  .orangeLine {
+    font-size: 28px;
+  }
+  .orangeLine {
+    text-underline-offset: 12px;
+  }
+  .innerDivOne,
+  .innerDivTwo,
+  .innerDivThree {
+    grid-template-columns: 100%;
+    margin-top: 60px;
+    margin: 50px 24px 0px 24px;
+    gap: 0px;
+    align-items: center;
+  }
+  .innerDivTwo,
+  .innerDivFour {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .twoSecond {
+    padding: 10px;
+    border-radius: 30px;
+    border-width: 2.5px 0cqh 2.5px 2.5px;
+  }
+
+
+  
+  .oneFirst {
+    padding: 20px 10px;
+  }
+  .twoSecondTop {
+    padding: 5px 10px;
+  }
+  .twoSecondTop {
+    font-size: 13px !important;
+    margin-bottom: 10px;
+  }
+  .domainText {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .oneFirst h3,
+  .twoSecond h3,
+  .threeFirst h3 {
+    font-size: 26px;
+  }
+  .oneFirst p,
+  .twoSecond p {
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+    margin-top: 5px;
+  }
+  .innerBox {
+    margin-top: 20px;
+    gap: 20px;
+    grid-template-columns: 47% 47%;
+  }
+  .iconBox img {
+    width: 50px;
+    height: auto;
+  }
+
+  .oneSecond {
+    display: flex;
+    justify-content: center;
+  }
+  .oneSecond img {
+    padding: 0px 40px;
+  }
+  .botDiv {
+    margin-top: 14px;
+    padding: 8px 10px;
+    height: fit-content;
+  }
+  .botDiv p {
+    font-size: 10px;
+    margin: 0;
+  }
+  .threeFirst {
+    padding: 22px 10px;
+  }
+  .ytHead {
+    font-size: 20px !important;
+  }
+  .icon {
+    width: 16px;
+    height: 22px;
+  }
+  .contentIconDiv {
+    grid-template-columns: 51% 45%;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .ytBot {
+    height: 76px;
+  }
+  .ytBot p {
+    line-height: 20px;
+  }
+  .pHead {
+    font-size: 13px;
+  }
+  .pBot {
+    font-size: 12px;
+  }
+  .innerDivFour {
+    margin: 30px 24px;
+    gap: 10px;
+  }
+  .SecondFour {
+    padding: 14px;
+  }
+  .SecondFour h3 {
+    font-size: 22px;
+  }
+  .SecondFour p {
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .botDivYellow {
+    margin-top: 16px;
+    height: 60px;
+  }
+  .botDivYellow p {
+    margin-top: 0px;
+    font-size: 12px;
+  }
+  .oneFour img {
+    display: none;
+  }
+}

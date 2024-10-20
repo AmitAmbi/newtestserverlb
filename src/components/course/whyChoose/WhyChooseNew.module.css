@@ -1,0 +1,508 @@
+.whyChooseSection {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0 40px 0px;
+}
+
+.domains {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  border-radius: 81px;
+  background: radial-gradient(
+      circle at 10% 10%,
+      /* Blue circle positioned at the top left */ rgba(6, 59, 92, 0.9) 15%,
+      /* Smaller blue circle */ transparent 30% /* Smooth transition to black */
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      /* Orange circle positioned at the bottom right */
+        rgba(254, 122, 54, 000.3) 15%,
+      /* Glowing orange circle */ transparent 40%
+        /* Smooth transition to black */
+    ),
+    #212121; /* Black background covering everything else */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 70px;
+  color: #000;
+  padding: 70px 0 0;
+  overflow: hidden;
+}
+
+.bgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bgImageDesktop,
+.bgImageMobile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bgImageDesktop {
+  display: block;
+}
+
+.bgImageMobile {
+  display: none;
+}
+
+.container h2 {
+  text-align: center;
+  color: #fff1ea;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.orangeLine {
+  text-decoration: underline;
+  text-decoration-color: #fe7a36;
+  text-underline-offset: 14px;
+}
+
+
+.innerDivOne, .innerDivTwo, .innerDivThree, .innerDivFour {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+}
+
+.innerDivOne, .innerDivThree {
+  grid-template-columns: 50% 30%;
+  margin-bottom: 100px;
+}
+
+
+
+.innerDivTwo,
+.innerDivFour {
+  grid-template-columns:30% 48%;
+  margin-top: 50px;
+}
+
+.innerDivOne {
+  margin-top: 80px;
+}
+
+
+
+.SecondFour h3,
+.SecondFour p {
+  color: #fff;
+}
+
+.SecondFour p {
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  gap: 10px;
+}
+
+.innerDivFour {
+  margin-top: 120px;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.listhree {
+  margin-top: 20px;
+}
+
+.innerDivThree {
+  gap: 60px;
+  margin-top: 60px;
+}
+.oneFirst {
+  background: url("https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/choose_first_left.webp");
+  background-size: contain;
+  height: fit-content;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.SecondFour {
+  padding: 24px 70px 35px 40px;
+  border-width: 4px 4px 4px 0px;
+  border-radius: 30px;
+  border-color: #04c988;
+  background: linear-gradient(
+    270deg,
+    rgba(4, 201, 136, 0) 0%,
+    rgba(4, 201, 136, 0.15) 100%
+  );
+  border-style: solid;
+  padding: 30px;
+}
+
+.ytBot {
+  padding: 0px 20px;
+  height: 102px;
+  display: grid;
+  align-items: center;
+  border-radius: 23px;
+  border: 1px solid rgba(4, 201, 136, 0);
+  background: rgba(4, 201, 136, 0.1);
+}
+
+.twoSecond {
+  background-repeat: no-repeat;
+  padding: 24px 66px 35px 40px;
+  border-width: 5px 0px 5px 5px;
+  border-radius: 30px;
+  border-color: #0072bc70;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 114, 188, 0.15) 0.32%,
+    rgba(0, 114, 188, 0) 98.75%
+  );
+  border-style: solid;
+}
+
+.twoSecond p {
+  color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 144.5%; /* 31.79px */
+}
+
+.oneFirst h3,
+.twoSecond h3,
+.threeFirst h3 {
+  color: #fff;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 144.5%;
+  text-wrap: balance;
+}
+
+.twoSecondTop {
+  border-radius: 35px;
+  background: rgba(0, 170, 255, 0.2);
+  font-size: 17px !important;
+  padding: 5px 30px 5px 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.twoSecond h3 {
+  color: #0092d0;
+}
+
+.oneFirst p{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  gap: 10px;
+}
+
+.innerBox {
+  display: grid;
+  margin-top: 30px;
+  gap: 40px;
+  grid-template-columns: 44% 35%;
+  margin-bottom: 40px;
+}
+
+.iconBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.iconBox img{
+  width: 40px;
+  height: auto;
+}
+.innerBox{
+  margin-bottom: 0;
+}
+
+.iconBox p {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.oneFour img {
+  width: 100%;
+  height: auto;
+}
+
+.oneSecond img {
+  height: 100%;
+  width: 100%;
+}
+
+.botDiv {
+    background: url(https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/botBg_new.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 140px;
+    padding: 7px 12px;
+    margin-top: 45px;
+    position: absolute;
+    width: 500px;
+    bottom: -90px;
+}
+
+.botDiv p {
+  color: #FFF;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 144.5%;
+}
+
+.botDiv span {
+  color: #FE7A36;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 144.5%; /* 26.01px */
+}
+.twoFirst img,
+.threeSecond img {
+  height: auto;
+  width: 100%;
+}
+
+.threeSecond {
+  display: grid;
+  gap: 20px;
+}
+
+.contentIconDiv {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contentIconDiv > div {
+  display: grid;
+  grid-template-columns: 10% 86%;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.pHead {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pBot {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.icon {
+  color: #fe7a36;
+}
+
+.innerDivFourLast {
+  display: grid;
+  grid-template-columns:42% 30%;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1381px) {
+  .container {
+    width: 1280px;
+  }
+}
+@media (max-width: 1281px) {
+  .container {
+    width: 1180px;
+  }
+  .oneSecond img {
+    width: 340px;
+    height: auto;
+  }
+}
+@media (max-width: 1081px) {
+  .container {
+    width: 980px;
+  }
+  .oneFirst h3 {
+    font-size: 24px;
+  }
+
+  .SecondFour h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 951px) {
+  .container {
+    width: 840px;
+  }
+  .oneFirst h3 {
+    font-size: 14px;
+  }
+  .oneFirst p {
+    font-size: 12px;
+  }
+  .twoSecond p {
+    font-size: 12px;
+  }
+
+  .SecondFour h3 {
+    font-size: 14px;
+  }
+
+  .SecondFour p {
+    font-size: 14px;
+  }
+
+  .twoSecond h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bgImageDesktop {
+    display: none;
+  }
+  .bgImageMobile {
+    display: block;
+  }
+}
+
+@media (max-width: 641px) {
+  .container {
+    border-radius: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+  .whyChooseSection{
+    padding-top: 0;
+  }
+  .oneFirst {
+    background-repeat: no-repeat;
+    padding: 28px 14px;
+    margin: 43px 20px 0px 20px;
+  }
+  .container h2 {
+    color: #fff1ea;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 144.5%;
+  }
+
+  .twoSecondTop {
+    padding: 10px;
+    font-size: 12px !important;
+  }
+
+  .oneFirst h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 144.5%;
+  }
+  .oneFirst p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .oneSecond {
+    display: none;
+  }
+  .innerDivTwo {
+    display: flex;
+  }
+  .twoFirst {
+    display: none;
+  }
+  .twoSecond {
+    padding: 10px;
+    margin: 20px;
+  }
+  .twoSecond h3 {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 144.5%; /* 36.125px */
+  }
+
+  .innerDivFour {
+    display: flex;
+  }
+  .oneFour {
+    display: none;
+  }
+  .SecondFour {
+    padding: 14px;
+    margin: 20px;
+  }
+  .SecondFour h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 144.5%;
+  }
+  .listhree p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .domains {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .innerDivTwo {
+    margin-top: 140px;
+  }
+  .innerDivFourLast {
+    margin-top: 20px;
+  }
+
+  .innerDivOne{
+    display: flex;
+    margin-top: 0;
+  }
+  .botDiv{
+    background: none;
+  }
+  .botDiv {
+
+    width: 100%;
+        position: absolute;
+        bottom: -140px;
+  }
+  .botDiv p{
+    font-size: 12px;
+  }
+}

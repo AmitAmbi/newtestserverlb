@@ -1,0 +1,138 @@
+/* Container and layout styles */
+.container {
+  padding: 2rem;
+}
+.container h2 {
+  text-align: center;
+  margin: 50px;
+}
+
+.innerDiv {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  margin: 50px auto;
+  justify-content: space-around;
+}
+
+.leftSide {
+  flex: 1;
+}
+
+.rightSide {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom:0;
+  opacity: 0.6; /* Start with gray and less opacity */
+  transition: all 0.5s ease; /* Smooth animation */
+  gap: 30px;
+}
+
+/* Active state for blue text */
+.activeStep {
+  opacity: 1; /* Fully visible when active */
+  transition: all 0.5s ease-in-out; /* Smooth transition */
+}
+
+.SpanGrey {
+  color: #a5a5a5; /* Gray for inactive steps */
+}
+
+.SpanGrey span {
+  text-align: center;
+font-size: 45px;
+font-weight: 700;
+line-height: 126.5%; /* 56.925px */
+}
+.SpanBlue{
+  border-radius: 20.796px;
+  border: 1px solid rgba(0, 114, 188, 0.50);
+  background: #EBF4FA;
+  padding: 18px 30px;
+ 
+}
+.SpanGrey {
+border-radius: 20.796px;
+border: 1px solid rgba(0, 114, 188, 0.50);
+background: #EBF4FA;
+padding: 18px 30px;
+}
+.SpanBlue span {
+color: #0072bc;
+text-align: center;
+font-size: 45px;
+font-weight: 700;
+line-height: 126.5%; /* 56.925px */
+}
+
+.paraTopGrey {
+  color: #a5a5a5; /* Gray for inactive paragraph headers */
+}
+
+.paraTopBlue {
+  color: #0072bc; /* Blue for active paragraph headers */
+font-size: 24.076px;
+font-style: normal;
+font-weight: 600;
+line-height: 126.5%; /* 35.516px */
+}
+
+.paraTopGrey{
+  color: #a5a5a5; /* Gray for inactive paragraph headers */
+  font-size: 24.076px;
+font-style: normal;
+font-weight: 600;
+line-height: 126.5%; /* 35.516px */
+}
+
+.para {
+  color: #696868;
+  font-size: 17.597px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%; /* 31.963px */
+}
+
+/* SVG styles */
+.spanLine svg rect, .spanLine svg circle {
+  transition: fill 0.3s ease-in-out;
+}
+
+.spanLine {
+  margin-left: 2.2rem;
+}
+
+
+@media screen and (max-width:641px) {
+  .innerDiv {
+    display: flex;
+  }
+  .leftSide{
+    display: none;
+  }
+  .container h2 {
+    margin: 10px;
+    text-wrap: balance;
+    text-align: justify;
+  }
+  .paraTopBlue, .paraTopGrey  {
+    font-size: 18px;
+
+  }
+
+  .para {
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 148%; /* 23.68px */
+  }
+  .container{
+    padding: 1rem;
+  }
+  
+}
