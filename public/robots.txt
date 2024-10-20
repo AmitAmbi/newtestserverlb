@@ -12,6 +12,6 @@ Disallow: /*?utm_*
 Disallow: /*?fbclid*
 Disallow: /*?gclid*
 
-Allow: /
+Disallow: /
 
 Sitemap:https://www.learnbay.co/sitemap.xml
