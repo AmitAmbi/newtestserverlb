@@ -3,11 +3,10 @@ import styles from "./FirstSection.module.css";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
-function HeroSection({ setPopups, }) {
+function HeroSection({ setPopups }) {
   const popupShow = () => {
     setPopups(true);
   };
-
 
   const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
@@ -25,8 +24,6 @@ function HeroSection({ setPopups, }) {
     <section className={styles.conteiner}>
       <div className={styles.gridConteiner}>
         <div className={styles.leftside}>
-       
-
           <div className={styles.listleft}>
             <div className={styles.pointsDiv}>
               <Image
@@ -34,7 +31,7 @@ function HeroSection({ setPopups, }) {
                 width={25}
                 height={25}
                 alt="icon"
-                priority
+                loading="lazy"
                 quality={80}
               />
               <p>
@@ -48,7 +45,7 @@ function HeroSection({ setPopups, }) {
                 width={25}
                 height={25}
                 alt="icon"
-                priority
+                loading="lazy"
                 quality={80}
               />
               <p>
@@ -107,9 +104,7 @@ function HeroSection({ setPopups, }) {
                 </defs>
               </svg>
             </div>
-            <h2>
-            Check your eligibility!
-            </h2>
+            <h2>Check your eligibility!</h2>
             <hr className={styles.hr} />
 
             <div className={styles.spandiv}>
@@ -119,7 +114,7 @@ function HeroSection({ setPopups, }) {
                   width={25}
                   height={25}
                   alt="jobseaker"
-                  priority
+                  loading="lazy"
                   quality={100}
                 />
                 <span>Get personalized career guidance</span>
@@ -131,7 +126,7 @@ function HeroSection({ setPopups, }) {
                   width={25}
                   height={25}
                   alt="jobseaker"
-                  priority
+                  loading="lazy"
                   quality={100}
                 />
                 <span>30 min call with industry expert</span>
@@ -142,7 +137,7 @@ function HeroSection({ setPopups, }) {
                   width={25}
                   height={25}
                   alt="jobseaker"
-                  priority
+                  loading="lazy"
                   quality={100}
                 />
                 <span>Discover your upskilling path</span>
@@ -152,9 +147,7 @@ function HeroSection({ setPopups, }) {
           <div className={styles.listDown}>
             <div className={styles.bookFreebtn}>
               <div onClick={popupShow}>
-                <button>
-                  Book Free Session Now 
-                </button>
+                <button>Book Free Session Now</button>
                 <p>
                   No strings attached—explore your career options with expert
                   advice!
@@ -176,6 +169,7 @@ function HeroSection({ setPopups, }) {
                   alt="loading"
                   quality={100}
                   className={styles.mblImag}
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -204,7 +198,7 @@ function HeroSection({ setPopups, }) {
             width={isMobile ? 400 : 760}
             height={36}
             alt="type-logo"
-            priority
+            loading="lazy"
             quality={100}
           />
         </div>
