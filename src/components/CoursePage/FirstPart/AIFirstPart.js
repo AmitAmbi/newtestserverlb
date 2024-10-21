@@ -1,20 +1,14 @@
 import dynamic from "next/dynamic";
-
-import PsummaryForm from "../PSummary/PsummaryForm";
 import React, { useEffect, useState } from "react";
-const HeroSectionAI = dynamic(() => import("@/components/course/heroSection/HeroSectionAI"), {
-  ssr: false, // Disable server-side rendering if needed
-});
+import HeroSectionAI from "@/components/course/heroSection/HeroSectionAI";
+import NavbarSection from "@/components/course/navbarSection/NavbarSection";
 
 const ReviewSlider = dynamic(() => import("@/components/course/reviewSlider/reviewSlider"), {
   ssr: false, // Disable server-side rendering if needed
 });
 
-
-const Navbar = dynamic(() =>
-  import("@/components/course/navbarSection/NavbarSection")
-);
 const PSummaryAD = dynamic(() => import("../PSummary/PSummaryAD"));
+const PsummaryForm = dynamic(() => import("../PSummary/PsummaryForm"));
 const Practical = dynamic(() => import("../Practical/Practical"));
 const ProgramSection = dynamic(() =>
   import("@/components/course/programSection/programSection")
@@ -25,12 +19,14 @@ const OutcomeSection = dynamic(() =>
 const WhyChooseSection = dynamic(() =>
   import("@/components/course/whyChooseSection/whyChooseSection")
 );
+
 const AIFirstPart = ({ ProggramSectionData, summaryData }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(null); // Initialize with null to avoid initial false render
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
+      const isMobileView = window.innerWidth < 768;
+      setIsMobile(isMobileView);
     };
 
     handleResize(); // Set the initial value
@@ -45,7 +41,7 @@ const AIFirstPart = ({ ProggramSectionData, summaryData }) => {
 
   return (
     <>
-      <Navbar dataScienceCounselling={true} interstedInHide={true} />
+      <NavbarSection dataScienceCounselling={true} interstedInHide={true} />
       <HeroSectionAI
         isSpecialPage={true}
         isGuwahati={true}
@@ -70,15 +66,19 @@ const AIFirstPart = ({ ProggramSectionData, summaryData }) => {
         PointsDiv={true}
       />
 
-      {isMobile &&       <PSummaryAD  summaryData={summaryData}/>}
-      {!isMobile && (
-        <PsummaryForm
-          showForm={true}
-          interstedInHide={true}
-          dataScienceCounselling={true}
-          dataScience={true}
-        />
+      {isMobile !== null && ( // Render only after determining the screen size
+        isMobile ? (
+          <PSummaryAD summaryData={summaryData} />
+        ) : (
+          <PsummaryForm
+            showForm={true}
+            interstedInHide={true}
+            dataScienceCounselling={true}
+            dataScience={true}
+          />
+        )
       )}
+
       <Practical />
       <ProgramSection
         ProggramSectionData={ProggramSectionData}
@@ -87,7 +87,6 @@ const AIFirstPart = ({ ProggramSectionData, summaryData }) => {
         dataScience={true}
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/UpdateBrochure/AIML.pdf"
       />
-
       <OutcomeSection />
       <WhyChooseSection />
       <ReviewSlider />
