@@ -24,6 +24,11 @@ function HeroSection({ setPopups }) {
     <section className={styles.conteiner}>
       <div className={styles.gridConteiner}>
         <div className={styles.leftside}>
+          <h1>
+            India’s <span className={styles.spantitle}>#1 Project-based</span>{" "}
+            Upskilling Platform for Professionals
+          </h1>
+
           <div className={styles.listleft}>
             <div className={styles.pointsDiv}>
               <Image
@@ -161,6 +166,7 @@ function HeroSection({ setPopups }) {
                   alt="loading"
                   quality={100}
                   className={styles.desktopImg}
+                  loading="lazy"
                 />
                 <Image
                   src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/icon_mobile_con.webp"
