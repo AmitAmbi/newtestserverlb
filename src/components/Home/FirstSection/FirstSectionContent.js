@@ -25,9 +25,7 @@ function HeroSection({ setPopups, }) {
     <section className={styles.conteiner}>
       <div className={styles.gridConteiner}>
         <div className={styles.leftside}>
-          <h1>
-            India’s #1 Project-based Upskilling Platform for Professionals
-          </h1>
+       
 
           <div className={styles.listleft}>
             <div className={styles.pointsDiv}>
