@@ -26,7 +26,7 @@ function HeroSection({ setPopups, }) {
       <div className={styles.gridConteiner}>
         <div className={styles.leftside}>
           <h1>
-            India’s <span className={styles.spantitle}>#1 Project-based</span> Upskilling Platform for Professionals
+            India’s #1 Project-based Upskilling Platform for Professionals
           </h1>
 
           <div className={styles.listleft}>
